@@ -1,14 +1,14 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+  {% include 'templates/head.html' %}
+  <body>
+    {% include 'templates/header.html' %}
 
-{% include 'templates/head.html' %}
-<body>
-  {% include 'templates/header.html' %}
+    <hr />
 
-  {% block content %}
+    {% block content %} {% endblock %}
 
-  {% endblock %}
-
+    <hr />
+  </body>
   {% include 'templates/footer.html' %}
-</body>
 </html>
