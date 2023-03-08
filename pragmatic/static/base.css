@@ -15,3 +15,7 @@
 .pinterest_footer_button {
   font-size: 0.9rem;
 }
+
+a {
+  text-decoration: none;
+}
