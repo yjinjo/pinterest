@@ -1,0 +1,17 @@
+.pinterest_header {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.pinterest_logo {
+  font-family: "Lobster", cursive;
+}
+
+.pinterest_footer {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.pinterest_footer_button {
+  font-size: 0.6rem;
+}
