@@ -6,6 +6,7 @@ from django.views.generic.list import MultipleObjectMixin
 from articleapp.models import Article
 from projectapp.forms import ProjectCreationForm
 from projectapp.models import Project
+from subscriptionapp.models import Subscription
 
 
 class ProjectCreateView(CreateView):
@@ -26,9 +27,15 @@ class ProjectDetailView(DetailView, MultipleObjectMixin):
 
     # 어떤 게시글들을 가져올지 filtering 하는 메서드입니다.
     def get_context_data(self, **kwargs):
+        project = self.object
+        user = self.request.user
+
+        if user.is_authenticated:
+            subscription = Subscription.objects.filter(user=user, project=project)
+
         object_list = Article.objects.filter(project=self.get_object())
         return super(ProjectDetailView, self).get_context_data(
-            object_list=object_list, **kwargs
+            object_list=object_list, subscription=subscription, **kwargs
         )
 
 
