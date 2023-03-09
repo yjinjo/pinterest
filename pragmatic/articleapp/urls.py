@@ -6,6 +6,7 @@ from articleapp.views import (
     ArticleDetailView,
     ArticleUpdateView,
     ArticleDeleteView,
+    ArticleListView,
 )
 
 app_name = "articleapp"
@@ -13,7 +14,7 @@ app_name = "articleapp"
 urlpatterns = [
     path(
         "list/",
-        TemplateView.as_view(template_name="articleapp/list.html"),
+        ArticleListView.as_view(),
         name="list",
     ),
     path(
