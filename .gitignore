@@ -135,5 +135,7 @@ fabric.properties
 .env
 **.pyc
 media/
+Dockerfile
+nginx.conf
 
 # End of https://www.toptal.com/developers/gitignore/api/macos,pycharm+all,database
