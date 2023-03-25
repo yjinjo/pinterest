@@ -132,7 +132,6 @@ fabric.properties
 !.idea/codeStyles
 !.idea/runConfigurations
 
-migrations/
 .env
 **.pyc
 media/
