@@ -1,4 +1,4 @@
-asgiref==3.3.1
+asgiref==3.6.0
 beautifulsoup4==4.9.3
 Django==4.1.7
 django-bootstrap4==2.3.1
