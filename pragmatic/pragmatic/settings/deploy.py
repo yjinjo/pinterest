@@ -11,7 +11,7 @@ DATABASES = {
         "ENGINE": "django.db.backends.mysql",
         "NAME": "django",
         "USER": "django",
-        "PASSWORD": os.environ.get("DATABASE_PASSWORD"),
+        "PASSWORD": "test1234!",
         "HOST": "mariadb",
         "PORT": "3306",
     }
