@@ -132,7 +132,7 @@ fabric.properties
 !.idea/codeStyles
 !.idea/runConfigurations
 
-.env
+pragmatic/.env
 **.pyc
 media/
 Dockerfile
