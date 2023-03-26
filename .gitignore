@@ -138,5 +138,6 @@ media/
 Dockerfile
 nginx.conf
 staticfiles/
+docker-compose.yml
 
 # End of https://www.toptal.com/developers/gitignore/api/macos,pycharm+all,database
