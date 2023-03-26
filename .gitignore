@@ -137,5 +137,6 @@ pragmatic/.env
 media/
 Dockerfile
 nginx.conf
+staticfiles/
 
 # End of https://www.toptal.com/developers/gitignore/api/macos,pycharm+all,database
