@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 
 from pathlib import Path
 
+from django.contrib.messages import constants as messages
 from django.urls import reverse_lazy
 import os
 from dotenv import load_dotenv
@@ -43,6 +44,7 @@ INSTALLED_APPS = [
     "commentapp",
     "projectapp",
     "subscriptionapp",
+    "likeapp",
 ]
 
 MIDDLEWARE = [
@@ -54,6 +56,10 @@ MIDDLEWARE = [
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
 ]
+
+MESSAGE_TAGS = {
+    messages.ERROR: "danger",
+}
 
 ROOT_URLCONF = "pragmatic.urls"
 
